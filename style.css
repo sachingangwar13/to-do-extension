@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  padding: 10px;
+  background-color: #b7b6b6;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+#addBtn {
+  background-color: greenyellow;
+  width: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.no-todos {
+  display: flex;
+  border-radius: 12px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  font-size: 12px;
+  box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+#listt {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#listt {
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #e0e0c6;
+}
+
+
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+    /* border: .5px solid rgba(0, 0, 0, 0.6); */
+
+  border-radius: 8px;
+}
+  .task-text.checked {
+    text-decoration: line-through;
+    opacity: .8;
+  }
+
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .delete-btn svg {
+    pointer-events: none;
+    /* so click hits the button */
+  }
+
+  .delete-btn:hover svg {
+    stroke: red;
+    /* change icon color on hover */
+  }
+
+
+  .task-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
