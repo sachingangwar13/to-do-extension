@@ -20,7 +20,7 @@ A simple and minimal **Todo List** Chrome extension where you can:
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/your-username/todo-extension.git
+   git clone https://github.com/sacingangwar13/todo-extension.git
    ```
 
 2. Open Chrome and go to:
