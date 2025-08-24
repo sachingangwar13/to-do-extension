@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Simple To-Do",
+  "name": "To-Do",
   "description": "A minimal to-do list in your browser toolbar",
   "version": "1.0",
   "action": {

@@ -124,3 +124,9 @@ function removeTask(task, taskDiv) {
   taskDiv.remove();
   updateUI();
 }
+const gitHubBtn = document.querySelector(".github-link");
+
+gitHubBtn.addEventListener("click", () => {
+  console.log("first");
+  chrome.tabs.create({ url: "https://github.com/sachingangwar13/to-do-extension" });
+});
